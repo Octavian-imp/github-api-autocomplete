@@ -1,12 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./components/listRepo/index.scss";
+@import "./components/searchForm/index.scss";
 *,
 ::after,
 ::before {
   margin: 0;
   padding: 0;
+  @apply focus-within:outline-orange-400 duration-75;
+}
+*::selection {
+  @apply bg-orange-500;
 }
 
-.body {
+body,
+html {
   min-height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+}
+#root {
+  @apply w-full bg-zinc-800 h-full;
+}
+
+.page {
+  @apply min-h-screen w-fit mx-auto text-white flex flex-col items-center justify-center gap-y-8;
 }
