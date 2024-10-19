@@ -1,0 +1,21 @@
+.search {
+  &-form {
+    @apply relative;
+    &__input {
+      @apply rounded-xl bg-zinc-500 py-2 px-3 focus-visible:outline-none;
+    }
+  }
+  &-list {
+    @apply absolute top-[130%] flex-col hidden z-10;
+
+    &__item {
+      &:first-child {
+        @apply rounded-t-lg;
+      }
+      &:last-child {
+        @apply rounded-b-lg;
+      }
+      @apply bg-zinc-500 px-3 py-2 duration-150 cursor-pointer focus-within:bg-zinc-400 hover:bg-zinc-400;
+    }
+  }
+}
