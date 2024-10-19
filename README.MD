@@ -1,2 +1,3 @@
-# Сборка webpack
+# Запуск 
+```npm i && npm run dev```
 
