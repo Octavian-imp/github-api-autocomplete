@@ -29,7 +29,7 @@ const debounceHandle = debounce(async (e) => {
     `https://api.github.com/search/repositories?q=${value}&per_page=5&page=1`,
     {
       headers: {
-        Authorization: "Bearer <YOUR_ACCESS_TOKEN>",
+        Authorization: "Bearer <указать токен github>",
         Accept: "application/vnd.github.v3+json",
       },
     }
